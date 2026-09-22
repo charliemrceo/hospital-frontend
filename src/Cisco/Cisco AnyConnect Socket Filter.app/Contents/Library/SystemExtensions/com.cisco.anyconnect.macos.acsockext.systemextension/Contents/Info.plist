@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>19H2</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Cisco AnyConnect Socket Filter Extension</string>
+	<key>CFBundleExecutable</key>
+	<string>com.cisco.anyconnect.macos.acsockext</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.cisco.anyconnect.macos.acsockext</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>com.cisco.anyconnect.macos.acsockext</string>
+	<key>CFBundlePackageType</key>
+	<string>SYSX</string>
+	<key>CFBundleShortVersionString</key>
+	<string>4.9.04043</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>4.9.04043</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>12B5044c</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>11.0</string>
+	<key>DTSDKBuild</key>
+	<string>20A5408a</string>
+	<key>DTSDKName</key>
+	<string>macosx11.0</string>
+	<key>DTXcode</key>
+	<string>1220</string>
+	<key>DTXcodeBuild</key>
+	<string>12B5044c</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>11.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (c) 2020 Cisco Systems, Inc.</string>
+	<key>NSSystemExtensionUsageDescription</key>
+	<string>This system extension provides socket filter capabilities.</string>
+	<key>NetworkExtension</key>
+	<dict>
+		<key>NEMachServiceName</key>
+		<string>DE8Y96K9QP.group.com.cisco.anyconnect.acsockext</string>
+		<key>NEProviderClasses</key>
+		<dict>
+			<key>com.apple.networkextension.app-proxy</key>
+			<string>AppProxyProvider</string>
+			<key>com.apple.networkextension.dns-proxy</key>
+			<string>DNSProxyProvider</string>
+			<key>com.apple.networkextension.filter-data</key>
+			<string>com_cisco_anyconnect_macos_acsockext.FilterDataProvider</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
