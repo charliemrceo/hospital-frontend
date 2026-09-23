@@ -23,6 +23,7 @@ import '@mdi/font/css/materialdesignicons.css'
                 colors: {
                     primary: "#1B5E20",
                     secondary: "#00E676",
+                    text: "#000",
                 },
             },
         },

@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    <h1>LSignUp Page</h1>
+    <h1>SignUp Page</h1>
 </template>

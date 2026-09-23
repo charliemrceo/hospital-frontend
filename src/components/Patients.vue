@@ -55,7 +55,7 @@ const showAddDialog = ref(false)
 </script>
 
 <template>
-    <v-container>
+    <v-container class="mt-6"> 
         <v-row>
             <v-col md="10">
                 <h1>Patients</h1>
@@ -67,7 +67,7 @@ const showAddDialog = ref(false)
     
         <v-row>
             <v-col>
-                <v-table class="borde r">
+                <v-table class="border" sripped="even">
                     <thead>
                         <tr>
                         <th>Name</th>
@@ -88,7 +88,7 @@ const showAddDialog = ref(false)
                             <td>{{ item.nationalId }}</td>
                             <td>{{ item.dob }}</td>
                             <td>
-                                <v-btn color="primary" size="small">
+                                <v-btn color="primary" size="small" to="/viewpatient"> <v-icon icon=""
                                     <v-icon> icon="mdi-eye"</v-icon>
                                     View
                                 </v-btn>
@@ -100,45 +100,54 @@ const showAddDialog = ref(false)
         </v-row>
     </v-container>
     <!--Add patients -->
-    <v-dialog v-model="showAddDialog" max-width="600px">
+    <v-dialog v-model="showAddDialog" max-width="50%">
         <v-from>
-            <v-card>
+            <v-card class="pa-4">
                 <v-row>
                 <v-card-text>Add Patient</v-card-text>
                 <v-spacer></v-spacer>
                 <v-btn class="ma-2" color="primary" icon="mdi-close" @click="showAddDialog = false"></v-btn>
                 </v-row>
-
+                    <v-divider class="mb-4" color="primary" opacity=".7" thickness="3" gradient></v-divider>
              <v-row>
                  <v-col md="6">
-                <v-text-field label="First Name"></v-text-field>
+                <v-text-field label="First Name" variant="outlined" prepend-icon="mdi-account-badge"></v-text-field>
                 </v-col>
                 <v-col md="6">
-                 <v-text-field label="Last Name"></v-text-field>
+                 <v-text-field label="Last Name" variant="outlined" prepend-icon="mdi-account-badge"></v-text-field>
                  </v-col>
              </v-row>
              <v-row>
                 <v-col md="6">
-                <v-text-field label="Email"></v-text-field>
+                <v-text-field label="Email" variant="outlined" prepend-icon="mdi-email-fast-outline"></v-text-field>
                 </v-col>
                 <v-col md="6">
-                 <v-text-field label="Phone"></v-text-field>
+                 <v-text-field label="Phone" variant="outlined" prepend-icon="mdi-phone-outline"></v-text-field>
+                 </v-col>
+            </v-row>
+             <v-row>
+                <v-col md="6"> 
+                <v-text-field label="Residence" variant="outlined" prepend-icon="mdi-home-outline"></v-text-field>
+                </v-col>
+                <v-col md="6">
+                    <v-text-field label="National ID" variant="outlined" prepend-icon="mdi-id-card"></v-text-field>
                  </v-col>
             </v-row>
              <v-row>
                 <v-col md="6">
-                <v-text-field label="Residence"></v-text-field>
-                </v-col>
-                <v-col md="6">
-                 <v-text-field label="National ID"></v-text-field>
-                 </v-col>
-            </v-row>
-             <v-row>
-                <v-col md="6">
-                <v-text-field label="Date Of Birth"></v-text-field>
+                <v-date-input label="Date Of Birth" prepend-icon="mdi-calendar-outline"></v-date-input>
                 </v-col>
             </v-row>
-
+                 <v-divider class="mb-4" color="primary" opacity=".7" thickness="3" gradient></v-divider>
+                 <v-row>
+                    <v-col>
+                        <v-card-actions>
+                            <v-btn color="primary" variant="outlined"><v-icon icon="mdi-close"></v-icon> Close</v-btn>
+                            <v-spacer/>
+                            <v-btn color="primary" variant="outlined"><v-icon icon="mdi-content-save-outlined"></v-icon> Save</v-btn>
+                        </v-card-actions>
+                    </v-col>
+                 </v-row>
             </v-card>
         </v-from>
     </v-dialog>

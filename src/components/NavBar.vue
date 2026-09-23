@@ -15,3 +15,4 @@
             <v-btn to="/profile">Profile</v-btn>
     </v-app-bar>
 </template>
+ 
