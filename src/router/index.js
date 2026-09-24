@@ -28,7 +28,7 @@ const router = createRouter({
       component:Patients
     },
     {
-      path:'/ profile',
+      path:'/profile',
       component:Profile
     },
     {
