@@ -25,7 +25,7 @@ const rules = {
 function handleSignup()
 {
     const data = {
-        firsname: firstname.value,
+        firstname: firstname.value,
         lastname: lastname.value,
         email: email.value,
         phone: phone.value,
@@ -34,7 +34,7 @@ function handleSignup()
         
     }
     signup(data)
-    router.push('/homepage');then(() => {
+    router.push('/homepage').then(() => {
         router.go (0)
     })
 }
